@@ -29,7 +29,7 @@ function reducer(basketProducts,action) {
           actualPrice = parseInt(actualPrice)
           actualPrice = actualPrice + (actualPrice / basketProduct.howManny)
           actualPrice = JSON.stringify(actualPrice) + '$'*/
-          return {...basketProduct,price:basketProduct.howManny+=1}
+          return {...basketProduct,howManny:basketProduct.howManny+=1}
         }
         return basketProduct
       })
